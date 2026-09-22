@@ -21,31 +21,18 @@ void LED_Init(void)
 	GPIO_SetBits(GPIOC, GPIO_Pin_13);						//设置PC13引脚为高电平
 }
 
-/**
-  * 函    数：LED开启
-  * 参    数：无
-  * 返 回 值：无
-  */
 void LED_ON(void)
 {
 	GPIO_ResetBits(GPIOC, GPIO_Pin_13);			//设置PC13引脚为低电平
 }
 
-/**
-  * 函    数：LED关闭
-  * 参    数：无
-  * 返 回 值：无
-  */
+
 void LED_OFF(void)
 {
 	GPIO_SetBits(GPIOC, GPIO_Pin_13);			//设置PC13引脚为高电平
 }
 
-/**
-  * 函    数：LED状态翻转
-  * 参    数：无
-  * 返 回 值：无
-  */
+
 void LED_Turn(void)
 {
 	if (GPIO_ReadOutputDataBit(GPIOC, GPIO_Pin_13) == 0)	//获取输出寄存器的状态，如果当前引脚输出低电平

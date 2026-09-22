@@ -4,10 +4,13 @@
 typedef struct{
 	float Target;
 	float Actual;
+	float Actual1;
 	
 	float Error0; 
 	float Error1;
 	float ErrorInt;
+	float ErrorIntMax;
+	float ErrorIntMin;
 	float ErrorDer;
 	float Pre_ErrorDer;
 	

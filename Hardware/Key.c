@@ -78,7 +78,6 @@ uint8_t Key_GetState(void)
   */
 void Key_Tick(void)
 {
-	/*定义静态变量（默认初值为0，函数退出后保留值和存储空间）*/
 	static uint8_t Count;					//用于计次分频
 	static uint8_t CurrState, PrevState;	//保存按键本次状态和上次状态
 	
